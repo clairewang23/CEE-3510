@@ -41,4 +41,3 @@ BOD_distance <- cbind(out_BOD, distance)
 
 # plot
 ggplot(data = BOD_distance, mapping = aes(x = distance, y = BOD)) + geom_line(color = 'blue') + labs(title = "BOD Decay", x = "Distance (km)", y = "BOD (mg/L)") + theme_light() + ylim(0,14)
-# plot(out_BOD, type="l", ylim=c(0,14),xlab="time (d)", ylab="BOD (mg/L)", main="BOD Decay")
